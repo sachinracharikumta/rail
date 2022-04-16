@@ -27,5 +27,8 @@ def home():
     response = jsonify(res)
     # response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+@app.route(/hi)
+def hi():
+    return render_template("demo.html")
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=false,host='0.0.0.0')
